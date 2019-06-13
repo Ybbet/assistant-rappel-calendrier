@@ -1,6 +1,6 @@
 # assistant-rappel-calendrier
 
-Ce plugin de [assistant-plugins](https://aymkdn.github.io/assistant-plugins/) permet de lire un fichier ics et de lancer une notification sur les Google Home.
+Ce plugin de [assistant-plugins](https://aymkdn.github.io/assistant-plugins/) permet de lire un fichier ics et de diffuser un rappel d'un événement sur les Google Home.
 
 ## Pré-requis
 Avant toutes choses, il est nécessaire d'installer `assistant-plugins` et le plugin `assistant-notifier`. Vous devrez les configurer correctement pour profiter pleinement du présent plugin.
