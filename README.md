@@ -33,13 +33,13 @@ Une fois configuré, le plugin lira toutes les minutes le fichier ICS indiqué. 
 notifier_{google_home_id} mon rappel-calendrier
 ```
 
-Pour se faire, losque vous créez un nouvel événément dans le calendrier dédié à ce plugin, vous devez respecter les règles suivantes :
+Pour se faire, lorsque vous créez un nouvel événément dans le calendrier dédié à ce plugin, vous devez respecter les règles suivantes :
 * (requis) __Le titre de l'événement__ sera le texte diffusé votre ou vos Google Home
 * (optionnel) __Le descriptif__ _(ou les notes selon votre gestionnaire de calendrier)_ contiendra le ou les noms de Google Home désiré(s). Se référer à la documentation du plugin `assistant-notifier` pour plus de renseignement. Il ne faut pas mettre d'accolades dans le descriptif de l'événement. Il suffit de séparer les identifiants de Google Home par une virgule.
 
 ## Avantage
 
-L'utilisation de ce plugin permet de ne plus passer par Pushbullet et IFTTT pour avoir une solution équivalente. De plus, avec l'utilisation des serveurs gratuits de pushbullet et IFTTT, il est possible qu'il y ait un retard de retransmission du rappel-calendrier sur les Google Home.
+L'utilisation de ce plugin permet de ne plus passer par Pushbullet et IFTTT pour avoir une solution équivalente. De plus, avec l'utilisation des serveurs gratuits de Pushbullet et IFTTT, il est possible qu'il y ait un retard de retransmission du rappel-calendrier sur les Google Home.
 De plus, vous pourrez utiliser toutes les fonctionnalités d'un calendrier :
 * répétition d'un événement ;
 * plusieurs événements dans la journée ;

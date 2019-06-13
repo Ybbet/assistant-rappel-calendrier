@@ -1,6 +1,6 @@
 {
   "name": "assistant-rappel-calendrier",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Plugin pour 'assistant-plugins' qui permet de lire un fichier ics et de diffuser un rappel sur les Google Home.",
   "author": "ybbet",
   "main": "rappel-calendrier.js",

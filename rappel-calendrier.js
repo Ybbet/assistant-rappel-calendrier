@@ -18,6 +18,26 @@ function event_totimestamp(date) {
 }
 
 /**
+ * Avoir un timestamp pour les logs
+ *
+ * @returns {string}
+ */
+function timestamp() {
+  var now = new Date();
+  var month = now.getMonth()+1;
+  if (month < 10) month="0"+month;
+  var day = now.getDate()+1;
+  if (day < 10) day="0"+day;
+  var hours = now.getHours();
+  if (hours < 10) hours = hours="0"+hours;
+  var minutes = now.getMinutes();
+  if (minutes < 10) minutes = minutes="0"+minutes;
+  var seconds = now.getSeconds();
+  if (seconds < 10) seconds = seconds="0"+seconds;
+  return now.getFullYear()+'-'+month+'-'+day+' '+hours+':'+minutes+':'+seconds;
+}
+
+/**
  * on crée une fonction `AssistantRappelCalendrier`
  * @param {Object} configuration L'objet `configuration` qui vient du fichier configuration.json
  */
@@ -51,7 +71,7 @@ AssistantRappelCalendrier.prototype.init = function(plugins) {
           if (data[k].type === 'VEVENT') {
             var date_ev = event_totimestamp(ev.start);
             if (date_ev === date && _this.plugins.notifier) {
-              console.log("[assistant-rappel-calendrier] Un rappel du calendrier à diffuser.");
+              console.log("[assistant-rappel-calendrier] (" + timestamp() + ") Un rappel du calendrier à diffuser.");
               if (ev.description.length > 0) {
                 // On a indiqué dans la description de l'événement les Google Home désirés
                 _this.plugins.notifier.action("{"+ev.description+"} "+ev.summary);
